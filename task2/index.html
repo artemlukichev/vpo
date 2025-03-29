@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+  <head><script src="/vpo/livereload.js?mindelay=10&amp;v=2&amp;port=56487&amp;path=vpo/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Тема №2 | ВПО-2025 Лукичев А.</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="2.1. Моделирование приложения на основе интерфейса Canvas
+Введение
+Canvas — это мощный инструмент в HTML, который позволяет создавать графику с помощью JavaScript. Он предоставляет возможности для рисования 2D и 3D изображений, а также для разработки интерактивных приложений, таких как игры и визуализации данных. В данной работе было разработано простое приложение с использованием Canvas.
+Цели работы
+
+Изучить основные функции интерфейса Canvas.
+Создать приложение, использующее Canvas для отображения графики.
+Реализовать интерактивные элементы управления.
+Подготовить рекомендации по дальнейшему использованию Canvas.
+
+Этапы выполнения работы
+
+
+Изучение интерфейса Canvas">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    <meta name="author" content="Лукичев А.">
+    
+
+    
+<link rel="stylesheet" href="/vpo/ananke/css/main.min.css" >
+
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:56487/vpo/task2/">
+    
+
+    <meta property="og:url" content="http://localhost:56487/vpo/task2/">
+  <meta property="og:site_name" content="ВПО-2025 Лукичев А.">
+  <meta property="og:title" content="Тема №2">
+  <meta property="og:description" content="2.1. Моделирование приложения на основе интерфейса Canvas Введение Canvas — это мощный инструмент в HTML, который позволяет создавать графику с помощью JavaScript. Он предоставляет возможности для рисования 2D и 3D изображений, а также для разработки интерактивных приложений, таких как игры и визуализации данных. В данной работе было разработано простое приложение с использованием Canvas.
+Цели работы Изучить основные функции интерфейса Canvas. Создать приложение, использующее Canvas для отображения графики. Реализовать интерактивные элементы управления. Подготовить рекомендации по дальнейшему использованию Canvas. Этапы выполнения работы Изучение интерфейса Canvas">
+  <meta property="og:locale" content="ru_ru">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2025-03-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-25T00:00:00+00:00">
+
+  <meta itemprop="name" content="Тема №2">
+  <meta itemprop="description" content="2.1. Моделирование приложения на основе интерфейса Canvas Введение Canvas — это мощный инструмент в HTML, который позволяет создавать графику с помощью JavaScript. Он предоставляет возможности для рисования 2D и 3D изображений, а также для разработки интерактивных приложений, таких как игры и визуализации данных. В данной работе было разработано простое приложение с использованием Canvas.
+Цели работы Изучить основные функции интерфейса Canvas. Создать приложение, использующее Canvas для отображения графики. Реализовать интерактивные элементы управления. Подготовить рекомендации по дальнейшему использованию Canvas. Этапы выполнения работы Изучение интерфейса Canvas">
+  <meta itemprop="datePublished" content="2025-03-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-25T00:00:00+00:00">
+  <meta itemprop="wordCount" content="753">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Тема №2">
+  <meta name="twitter:description" content="2.1. Моделирование приложения на основе интерфейса Canvas Введение Canvas — это мощный инструмент в HTML, который позволяет создавать графику с помощью JavaScript. Он предоставляет возможности для рисования 2D и 3D изображений, а также для разработки интерактивных приложений, таких как игры и визуализации данных. В данной работе было разработано простое приложение с использованием Canvas.
+Цели работы Изучить основные функции интерфейса Canvas. Создать приложение, использующее Canvas для отображения графики. Реализовать интерактивные элементы управления. Подготовить рекомендации по дальнейшему использованию Canvas. Этапы выполнения работы Изучение интерфейса Canvas">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/vpo/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        ВПО-2025 Лукичев А.
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/vpo/" title="Home page">
+              Home
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/vpo/task1/" title="Task 1 page">
+              Task 1
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/vpo/task2/" title="Task 2 page">
+              Task 2
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/vpo/task3/" title="Task 3 page">
+              Task 3
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/vpo/taskvar1/" title="var 1 page">
+              var 1
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/vpo/taskvar2/" title="var 2 page">
+              var 2
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/vpo/taskvar3/" title="var 3 page">
+              var 3
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          Тема №2
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h1 id="21-моделирование-приложения-на-основе-интерфейса-canvas">2.1. Моделирование приложения на основе интерфейса Canvas</h1>
+<h2 id="введение">Введение</h2>
+<p>Canvas — это мощный инструмент в HTML, который позволяет создавать графику с помощью JavaScript. Он предоставляет возможности для рисования 2D и 3D изображений, а также для разработки интерактивных приложений, таких как игры и визуализации данных. В данной работе было разработано простое приложение с использованием Canvas.</p>
+<h2 id="цели-работы">Цели работы</h2>
+<ol>
+<li>Изучить основные функции интерфейса Canvas.</li>
+<li>Создать приложение, использующее Canvas для отображения графики.</li>
+<li>Реализовать интерактивные элементы управления.</li>
+<li>Подготовить рекомендации по дальнейшему использованию Canvas.</li>
+</ol>
+<h2 id="этапы-выполнения-работы">Этапы выполнения работы</h2>
+<ol>
+<li>
+<p><strong>Изучение интерфейса Canvas</strong></p>
+<ul>
+<li>Ознакомился с основными методами и свойствами объекта <code>CanvasRenderingContext2D</code>, такими как <code>fillRect</code>, <code>strokeRect</code>, <code>beginPath</code>, <code>moveTo</code>, <code>lineTo</code> и другими.</li>
+<li>Изучил возможности работы с изображениями и текстом на Canvas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Создание HTML-страницы</strong></p>
+<ul>
+<li>Создал простую HTML-страницу с элементом <code>&lt;canvas&gt;</code>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ru&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Приложение на Canvas&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">canvas</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">canvas</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myCanvas&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;500&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;400&#34;</span>&gt;&lt;/<span style="color:#f92672">canvas</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Разработка JavaScript-кода</strong></p>
+<ul>
+<li>В файле <code>app.js</code> реализовал код для рисования на Canvas. Пример кода:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">canvas</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;myCanvas&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ctx</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">getContext</span>(<span style="color:#e6db74">&#39;2d&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Функция для рисования круга
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawCircle</span>(<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">y</span>, <span style="color:#a6e22e">radius</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">beginPath</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">arc</span>(<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">y</span>, <span style="color:#a6e22e">radius</span>, <span style="color:#ae81ff">0</span>, Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillStyle</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;blue&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fill</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">stroke</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Рисуем круг в центре Canvas
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">drawCircle</span>(<span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">50</span>);
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Добавление интерактивности</strong></p>
+<ul>
+<li>Реализовал возможность рисования кругов по клику мыши:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, (<span style="color:#a6e22e">event</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">rect</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">getBoundingClientRect</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">clientX</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">rect</span>.<span style="color:#a6e22e">left</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">clientY</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">rect</span>.<span style="color:#a6e22e">top</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">drawCircle</span>(<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">y</span>, <span style="color:#ae81ff">30</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Тестирование приложения</strong></p>
+<ul>
+<li>Приложение было протестировано в различных браузерах для проверки корректности работы.</li>
+<li>Убедился, что круги рисуются в точке клика и отображаются корректно.</li>
+</ul>
+</li>
+<li>
+<p><strong>Рекомендации по использованию Canvas</strong></p>
+<ul>
+<li>Рекомендуется использовать Canvas для создания интерактивных графиков, игр и визуализаций данных.</li>
+<li>Для более сложных приложений стоит рассмотреть использование библиотек, таких как Fabric.js или Paper.js, которые упрощают работу с Canvas.</li>
+<li>Регулярно проверять совместимость с различными браузерами и устройствами.</li>
+</ul>
+</li>
+</ol>
+<h2 id="заключение">Заключение</h2>
+<p>В результате работы было успешно смоделировано приложение на основе интерфейса Canvas, которое позволяет рисовать графику и взаимодействовать с пользователем. Canvas предоставляет отличные возможности для создания интерактивных приложений, и его использование может значительно улучшить пользовательский опыт. Рекомендуется продолжать изучение возможностей Canvas и его применение в будущих проектах.</p>
+<hr>
+<h1 id="22-разработка-приложения-на-основе-интерфейса-fetch-и-интерфейса-потоков">2.2. Разработка приложения на основе интерфейса fetch и интерфейса потоков</h1>
+<h2 id="введение-1">Введение</h2>
+<p>В современном веб-разработке важным аспектом является работа с асинхронными запросами и обработка данных. В данной работе была разработана простая веб-приложение, использующее интерфейс <code>fetch</code> для получения данных с сервера и интерфейс потоков для обработки этих данных. Это позволяет создавать более отзывчивые и эффективные приложения.</p>
+<h2 id="цели-работы-1">Цели работы</h2>
+<ol>
+<li>Изучить интерфейс <code>fetch</code> для выполнения HTTP-запросов.</li>
+<li>Ознакомиться с интерфейсом потоков для обработки данных.</li>
+<li>Разработать приложение, использующее оба интерфейса.</li>
+<li>Подготовить рекомендации по дальнейшему использованию этих технологий.</li>
+</ol>
+<h2 id="этапы-выполнения-работы-1">Этапы выполнения работы</h2>
+<ol>
+<li>
+<p><strong>Изучение интерфейса fetch</strong></p>
+<ul>
+<li>Ознакомился с основными возможностями интерфейса <code>fetch</code>, который позволяет выполнять HTTP-запросы и обрабатывать ответы.</li>
+<li>Изучил методы обработки ответов, такие как <code>response.json()</code> и <code>response.text()</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Создание HTML-страницы</strong></p>
+<ul>
+<li>Создал простую HTML-страницу с элементами для отображения данных:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ru&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Приложение на основе fetch и потоков&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h1</span>&gt;Данные с сервера&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;data&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Разработка JavaScript-кода</strong></p>
+<ul>
+<li>В файле <code>app.js</code> реализовал код для выполнения запроса к API и обработки полученных данных:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dataContainer</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;data&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">ok</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;Сеть ответила с ошибкой&#39;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">data</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">post</span> =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">postElement</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;div&#39;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">postElement</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`&lt;h2&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">title</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/h2&gt;&lt;p&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">body</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/p&gt;`</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">dataContainer</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">postElement</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">error</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Произошла ошибка:&#39;</span>, <span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Использование интерфейса потоков</strong></p>
+<ul>
+<li>Для обработки данных в потоковом режиме использовал <code>ReadableStream</code>, что позволяет обрабатывать данные по мере их поступления:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;https://jsonplaceholder.typicode.com/posts&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">reader</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">getReader</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">decoder</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">TextDecoder</span>(<span style="color:#e6db74">&#39;utf-8&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">reader</span>.<span style="color:#a6e22e">read</span>().<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">processText</span>({ <span style="color:#a6e22e">done</span>, <span style="color:#a6e22e">value</span> }) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">done</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Поток завершен&#34;</span>);
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">chunk</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">decoder</span>.<span style="color:#a6e22e">decode</span>(<span style="color:#a6e22e">value</span>, { <span style="color:#a6e22e">stream</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> });
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Получен фрагмент:&#34;</span>, <span style="color:#a6e22e">chunk</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">reader</span>.<span style="color:#a6e22e">read</span>().<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">processText</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">error</span> =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Ошибка при чтении потока:&#39;</span>, <span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Тестирование приложения</strong></p>
+<ul>
+<li>Приложение было протестировано в различных браузерах для проверки корректности работы.</li>
+<li>Убедился, что данные загружаются и отображаются правильно, а также что потоковая обработка работает без сбоев.</li>
+</ul>
+</li>
+<li>
+<p><strong>Рекомендации по использованию fetch и потоков</strong></p>
+<ul>
+<li>Рекомендуется использовать <code>fetch</code> для выполнения асинхронных запросов, так как он предоставляет более удобный и современный интерфейс по сравнению с <code>XMLHttpRequest</code>.</li>
+<li>Потоки могут быть полезны для обработки больших объемов данных, позволяя загружать и обрабатывать их по частям, что улучшает производительность приложения.</li>
+<li>Следует учитывать обработку ошибок и исключений для повышения надежности приложения.</li>
+</ul>
+</li>
+</ol>
+<h2 id="заключение-1">Заключение</h2>
+<p>В результате работы было успешно разработано приложение, использующее интерфейс <code>fetch</code> для получения данных и интерфейс потоков для их обработки. Эти технологии позволяют создавать более эффективные и отзывчивые веб-приложения. Рекомендуется продолжать изучение возможностей <code>fetch</code> и потоков для их применения в будущих проектах.</p>
+
+      </div>
+    </article>
+  </div>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:56487/vpo/" >
+    &copy;  ВПО-2025 Лукичев А. 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
